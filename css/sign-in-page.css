@@ -1,0 +1,102 @@
+/* mmax midth of the page */
+.main {
+  max-width: 460px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* position nike logo */
+.nike-logo {
+  margin-left: 0px;
+  padding-bottom: 5px;
+  align-items: center;
+  display: flex;
+  margin-top: 20px;
+}
+/* header of the sign page font size  */
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 28px;
+  width: 95%;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+/* font size and font familiy for class change coountry */
+.change-country {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  display: flex;
+  gap: 5px;
+}
+.change {
+  color: grey;
+  border-bottom: 2px solid grey;
+  margin-bottom: 5px;
+}
+.container-input {
+  padding: 5px 0 5px 0;
+}
+/* label position into container-input */
+label {
+  position: absolute;
+  margin-top: 25px;
+  color: gray;
+  margin-left: 5px;
+  transform: translateY(-50%);
+  background-color: white;
+  padding: 0 5px;
+  transition: all 0.2s ease-in-out;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* when click to enter the label move to the top of the container-input */
+.container-input:focus-within label {
+  margin-top: 0;
+  font-size: 12px;
+}
+/* input size and border */
+#custom-input {
+  padding: 17px;
+  width: 100%;
+  border-radius: 9px;
+  border-color: black;
+  border-width: thin;
+  box-sizing: border-box;
+}
+/* term of use color */
+.term-of-use {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 75%;
+  color: grey;
+  margin-bottom: 30px;
+}
+/* privacy and terms of use color */
+.term-of-use p a {
+  color: gray;
+}
+/* continue button */
+.btn1 {
+  background-color: black;
+  color: white;
+  border-radius: 28px;
+  padding: 12px 18px 12px 18px;
+  margin-left: auto;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+}
+/* continue button hover color grey */
+.btn1:hover {
+  background-color: grey;
+}
+/* media width changeing for h1 and terms of use */
+@media (max-width: 600px) {
+  h1 {
+    width: 90%;
+  }
+  .term-of-use {
+    width: 70%;
+  }
+}

@@ -1,0 +1,295 @@
+/* padding for the feature container */
+.feature-container{
+   padding: 50px 0 50px 0;
+   
+}
+/* display it to row and add transition for java script */
+ .featured-on-homepage {
+        display: flex;
+        justify-content: space-evenly;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+    }
+
+
+/* when pixel under 768 the feature display none */
+@media (max-width:768px){
+    #featured-on-homepage-hover {
+        display: flex;
+        flex-direction: column;
+    }
+    .feature-container{
+            margin-left: 20px;
+    }
+}
+
+/* when max width under 768px display accordion */
+@media (max-width : 768px){
+    #feature-on-homepage-small{
+        flex-direction: column; 
+        padding-left: 30px;
+        display: flex;
+        margin-top: 50px;
+    }
+            
+    .feature,
+    .shoes,
+    .clothing,
+    .kids {
+        width: 100%;
+    }
+    .feature,
+    .shoes,
+    .clothing,
+    .kids {
+        margin-bottom: 20px;
+    }
+    .collapsible {
+        color:black;
+        cursor: pointer;
+        padding-right: 0%;
+        width: 95%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;           
+    }
+        
+    .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        font-size: 16px;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px 0px 10px 0px;
+    }      
+}
+
+/* list colr and position */
+.featured-on-homepage li{
+        list-style-type: none;
+        margin-left: -31px;
+        color: grey;
+        padding-top: 5px;
+}
+    
+/* hover effect */
+.featured-on-homepage li:hover{
+        color: black;
+ }
+.collapsible{
+    padding: 0px;
+}
+   
+#feature-on-homepage-small{
+        display: none;
+        justify-content: space-evenly;
+        overflow: hidden;
+}
+    
+    
+/* start footer color  */
+.footer-container {
+        background-color:black;
+        color: #f6f6f6;
+        padding-top: 20px;
+        .footer-list {/* display item row */
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+.col{
+        width: 50%;
+        margin-bottom: 0;
+        margin-left: 10%;
+        margin-right: 10%;
+}
+/* remove style in list */
+.footer-list li {
+        list-style-type: none;
+        margin: 5px;
+    }
+/* display item row   */
+.very-bot-of-footer{
+        display: flex;
+    }
+
+#all-right-reserved{
+        font-size: 12px;
+    }
+/* flooter item fist colomun color white */
+    .footer-info-list,
+    .footer-info-help-list-head,
+    .footer-info-company-list-head,
+    .footer-info-promotion-list-head,
+    .footer-info-help-list,
+    .footer-info-company-list,
+    .footer-info-promotion-list,
+    .very-bot-of-footer-guide-list,
+    .very-bot-of-footer-guide-list-1 {
+        color: #f6f6f6;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    /* sub item of the footer color gray */
+    .footer-info-help-list,
+    .very-bot-of-footer-guide-list,
+    .very-bot-of-footer-guide-list-1,
+    #all-right-reserved {
+        color: gray;
+    }
+    /* hover effect color white for sub item of footer */
+    .footer-info-help-list:hover,
+    .footer-info-company-list:hover,
+    .footer-info-promotion-list:hover,
+    .very-bot-of-footer-guide-list:hover,
+    .very-bot-of-footer-guide-list-1:hover {
+        color: white;
+    }
+    /* socail media position */
+    .social-media-logo {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+        padding-left: 30px;
+        padding-right: 25px;
+    }
+    /* socail media circle */
+    .social-media-logo img {
+        height: 25px;
+        border-radius: 50%;
+        background-color: gray;
+    }
+    /* hover effect on social media */
+    .social-media-logo img:hover {
+        background-color: white;
+    }
+    /* most bottom item to the right display row  */
+    .very-bot-of-footer-guide {
+        display: flex;
+        justify-content:right;
+        gap: 10px;
+        margin-top: 50px;
+        list-style-type: none;
+        flex-wrap: wrap;
+        text-align: right;
+        padding-left: 40%;
+        padding-right: 25px;
+    }
+    /* location and name of the country */
+    #location-and-usa {
+        margin-top: 100px;
+        padding-left: 30px;
+        list-style-type: none ;
+        display: flex;
+        gap: 5px;
+    }
+    /* text color for the USA */
+    #USA {
+        color: #f6f6f6;
+        font-size: 12px;
+    }
+    /* accordion text color */
+    .collapsible{
+        color: white;
+        font-size: 12px;
+    }
+    
+    @media (min-width:889px) {
+        .footer-list,
+    .very-bot-of-footer {
+
+        transition: margin 0.2s ease;
+        
+    }
+}
+/* under max width 900px footer grid and  */
+@media (max-width: 900px) {
+    .footer-list,
+    .very-bot-of-footer-guide ,
+    .very-bot-of-footer{
+        flex-direction: column;
+        text-align: left;
+        transition: margin 0.2s ease;
+            
+        }
+
+        .very-bot-of-footer-guide{
+            padding-left: 19%;
+            margin-top: 20px;
+        }
+        .footer-list,
+        .very-bot-of-footer,
+        .footer-bottom,
+        .col,
+        #all-right-reserved{
+            margin-left: -5px;
+        }
+        .footer-list {
+            gap: 20px;
+        }
+    
+        .social-media-logo img {
+            height: 20px;
+        }
+        .social-media-logo{
+            margin-left: 0;
+        }
+        #location-and-usa {
+            margin-top: 10px;
+            margin-left:10px ;
+            flex-direction: column;
+        }
+        .footer-info{
+            border-bottom: grey solid 0.5px;
+            overflow: hidden;
+        }
+        .footer-info li{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-family: Nike TG, Helvetica Neue, Helvetica, Arial, sans-serif;;
+        }
+        /* accordion for the footer */
+          .collapsible {
+        color:white;
+        cursor: pointer;
+        padding-right: 0%;
+        width: 95%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 13px;
+        
+      }
+      /* accordion content */
+      .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        font-size: 16px;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 0;
+        padding-top: 5px;
+        background-color: black;
+        border: none;
+      }
+      /* accoddion + sign when accordion open */
+      .collapsible:after {
+        content: '\002B';
+        color: white;
+        font-weight: 300;
+        float: right;
+        margin-left: 5px;
+      }
+    }
+    /* accordion - sign when accodion open */
+    .active:after {
+        content: "\2212";
+        transform: rotate(180deg);
+      }
+}
